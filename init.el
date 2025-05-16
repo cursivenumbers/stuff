@@ -15,8 +15,8 @@
 ;; (set-frame-font "Consolas-26" t t )
 (set-face-attribute 'default nil :font "Liberation Mono 16") 
 ;; Quality of Life features
-(setq-default c-default-style "linux"
-	      c-basic-offset 4)
+(setq-default c-default-style "bsd"
+	      c-basic-offset 2)
 (dolist (hook '(text-mode-hook))
   (add-hook hook (lambda()
 		   (flyspell-mode 1)
