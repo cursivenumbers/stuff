@@ -28,7 +28,7 @@
 (setq auto-save-file-name-transforms
       '((".*" "~.emacs.d/saves/" t)))
 (setq backup-directory-alist
-      '((".*" "~.emacs.d/saves/" t)))
+      '((".*" "~.emacs.d/saves/")))
 
 ;; Add Melpa
 (require 'package)
