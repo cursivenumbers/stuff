@@ -26,9 +26,9 @@
 
 ;; Prevent Emacs from spamming the working directory
 (setq auto-save-file-name-transforms
-      '((".*" "~.emacs.d/saves/" t)))
+      '((".*" "~/.emacs.d/saves/" t)))
 (setq backup-directory-alist
-      '((".*" "~.emacs.d/saves/")))
+      '((".*" "~/.emacs.d/saves/")))
 
 ;; Add Melpa
 (require 'package)
