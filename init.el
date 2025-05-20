@@ -25,6 +25,8 @@
 (setq-default fill-column 72)
 
 ;; Prevent Emacs from spamming the working directory
+(unless (file-directory-p "~/.emacs.d/saves/")
+      (make-directory "~/.emacs.d/saves/"))
 (setq auto-save-file-name-transforms
       '((".*" "~/.emacs.d/saves/" t)))
 (setq backup-directory-alist
