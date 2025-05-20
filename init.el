@@ -24,6 +24,12 @@
 (setq-default word-wrap t)
 (setq-default fill-column 72)
 
+;; Prevent Emacs from spamming the working directory
+(setq auto-save-file-name-transforms
+      '((".*" "~.emacs.d/saves/" t)))
+(setq backup-directory-alist
+      '((".*" "~.emacs.d/saves/" t)))
+
 ;; Add Melpa
 (require 'package)
 (add-to-list 'package-archives
